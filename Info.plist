@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Camera permission — required for QR scanning -->
+    <key>NSCameraUsageDescription</key>
+    <string>Camera is used to scan QR codes so you can write their content to an NFC tag.</string>
+
+    <!-- NFC permission — required for CoreNFC -->
+    <key>NFCReaderUsageDescription</key>
+    <string>NFC is used to write the scanned QR code content to an NFC tag.</string>
+
+    <!-- Supported NFC tag formats (must match entitlements) -->
+    <key>com.apple.developer.nfc.readersession.formats</key>
+    <array>
+        <string>NDEF</string>
+    </array>
+</dict>
+</plist>
